@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text analyzer</title>
+</head>
+
+<body>
+    <label for="im">Imie:</label>
+    <input type="text" name="im" id="im">
+    <label for="na">Nazwisko:</label>
+    <input type="text" name="na" id="na">
+    <button onclick="imie()">Wyświetl Imie</button>
+    <button onclick="nazwisko()">Wyświetl nazwisko</button>
+
+    <p>Numer w dzienniku: 6</p>
+    <label for="num">Wpisz losowy numer:</label>
+    <input type="number" name="num" id="num">
+    <button onclick="dodaj()">Dodaj</button>
+    <p>Wynik: <span id="wynik"></span></p>
+    <script src="script.js"></script>
+
+    <br>
+    <button onclick="noweWart()">Przypisz nowe wartości</button>
+    <br>
+    <h2>-------Zadanie dodatkowe-------</h2>
+    <br>
+    <label for="num1">Wpisz liczbe 1: </label>
+    <input type="number" name="num1" id="num1">
+    <label for="num2">Wpisz liczbe 2: </label>
+    <input type="number" name="num2" id="num2">
+    <label for="dzialanie">Wybierz dzialanie:</label>
+    <select name="dzialanie" id="dzialanie">
+        <option value="+">Dodawanie</option>
+        <option value="-">Odejmowanie</option>
+        <option value="*">Mnożenie</option>
+        <option value="/">Dzielenie</option>
+        <option value="%">Modulo</option>
+    </select>
+    <button onclick="oblicz()">Oblicz</button>
+    <p>Wynik: <span id="wynikDod"></span></p>
+</body>
+
+</html>
